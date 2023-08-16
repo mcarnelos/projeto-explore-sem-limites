@@ -13,12 +13,18 @@
   --bg-color: #F9F4FB;
 }
 
+html,
+body {
+    height: 100vh;
+}
+
 body {
   font-size: 1.6rem;
   font-family: 'Mulish', sans-serif;
 }
 
 .container {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,8 +32,12 @@ body {
 
   background-color: var(--bg-color);
 
-  width: fit-content;
-  margin: 0 auto;
+  max-width: 100vw;
+}
+
+header {
+  width: 100vw;
+  text-align: center;
 }
 
 #img-principal {
@@ -80,7 +90,7 @@ p {
 }
 
 #seta {
-  margin-left: 15rem;
+  margin-right: 1rem;
   margin-top: 3.5rem;
   margin-bottom: 9.3rem;
 }
@@ -120,7 +130,7 @@ form {
 input, textarea {
   border-radius: 1.6rem;
   padding: 1.6rem;
-  width: 34.8rem;
+  width: 30rem;
 
   font-family: 'Mulish', sans-serif;
 }
@@ -130,7 +140,7 @@ textarea {
 }
 
 .formulario {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
 }
@@ -199,7 +209,7 @@ footer {
   }
 
   h1 {
-    font-size: 5.8rem;
+    font-size: 5.7rem;
   }
 
   h2 {
